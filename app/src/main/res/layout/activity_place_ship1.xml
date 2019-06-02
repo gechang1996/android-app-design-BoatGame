@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/WholePage"
+    tools:context=".PlaceShip1">
+
+    <TextView
+        android:id="@+id/turn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp" />
+
+
+
+    <LinearLayout
+        android:id="@+id/PlayingArea"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            tools:ignore="NestedWeights">
+
+            <edu.msu.gechang1.project1.ShipPieceView
+                android:id="@+id/shipPieceView1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <edu.msu.gechang1.project1.ShipPieceView
+                android:id="@+id/shipPieceView2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <edu.msu.gechang1.project1.ShipPieceView
+                android:id="@+id/shipPieceView3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <edu.msu.gechang1.project1.ShipPieceView
+                android:id="@+id/shipPieceView4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <edu.msu.gechang1.project1.ShipPieceView
+                android:id="@+id/shipPieceView5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <edu.msu.gechang1.project1.ShipPieceView
+                android:id="@+id/shipPieceView6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <edu.msu.gechang1.project1.ShipPieceView
+                android:id="@+id/shipPieceView7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <edu.msu.gechang1.project1.ShipPieceView
+                android:id="@+id/shipPieceView8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <edu.msu.gechang1.project1.ShipPieceView
+                android:id="@+id/shipPieceView9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <edu.msu.gechang1.project1.ShipPieceView
+                android:id="@+id/shipPieceView10"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <edu.msu.gechang1.project1.ShipPieceView
+                android:id="@+id/shipPieceView11"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <edu.msu.gechang1.project1.ShipPieceView
+                android:id="@+id/shipPieceView12"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <edu.msu.gechang1.project1.ShipPieceView
+                android:id="@+id/shipPieceView13"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <edu.msu.gechang1.project1.ShipPieceView
+                android:id="@+id/shipPieceView14"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <edu.msu.gechang1.project1.ShipPieceView
+                android:id="@+id/shipPieceView15"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <edu.msu.gechang1.project1.ShipPieceView
+                android:id="@+id/shipPieceView16"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/PlaceShipDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:enabled="false"
+            android:onClick="OnWin"
+            android:text="@string/done" />
+
+        <Button
+            android:id="@+id/surrender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:onClick="OnLose"
+            android:text="@string/giveup" />
+    </FrameLayout>
+
+</LinearLayout>
